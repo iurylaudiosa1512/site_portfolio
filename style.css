@@ -17,6 +17,7 @@ body{
   background: radial-gradient(1200px 700px at 20% 0%, #0f1b33 0%, var(--bg) 60%);
   color:var(--text);
 }
+
 a{ color:inherit; text-decoration:none; }
 img{ width:100%; height:100%; object-fit:cover; display:block; }
 
@@ -77,7 +78,11 @@ img{ width:100%; height:100%; object-fit:cover; display:block; }
 .highlight ul{ margin:0; padding-left:18px; color:var(--muted); line-height:1.6; }
 
 .section{ padding:34px 0; }
-.section.alt{ background: rgba(255,255,255,.02); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.section.alt{
+  background: rgba(255,255,255,.02);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
 
 .section-head{ margin-bottom:18px; }
 .section-head h2{ margin:0 0 6px; }
@@ -110,22 +115,6 @@ img{ width:100%; height:100%; object-fit:cover; display:block; }
   background: rgba(255,255,255,.02);
 }
 
-.grid{
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap:14px;
-}
-.card{
-  background: var(--card);
-  border:1px solid var(--line);
-  border-radius:18px;
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
-}
-.thumb{ height:170px; background:#0b0e14; border-bottom:1px solid var(--line); }
-.card-body{ padding:14px; }
-.card-body h3{ margin:0 0 8px; }
 .meta{ display:flex; gap:8px; flex-wrap:wrap; margin:10px 0 10px; }
 .tag{
   font-size:12px; color:var(--muted);
@@ -134,7 +123,7 @@ img{ width:100%; height:100%; object-fit:cover; display:block; }
   border-radius:999px;
   background: rgba(255,255,255,.02);
 }
-.bullets{ margin:10px 0 0; padding-left:18px; color:var(--muted); line-height:1.6; }
+
 .links{ display:flex; gap:12px; flex-wrap:wrap; margin-top:12px; }
 .links a{
   font-size:13px;
@@ -150,6 +139,7 @@ img{ width:100%; height:100%; object-fit:cover; display:block; }
   gap:14px;
   align-items:start;
 }
+
 .box{
   background: var(--card);
   border:1px solid var(--line);
@@ -207,7 +197,6 @@ img{ width:100%; height:100%; object-fit:cover; display:block; }
 }
 
 @media (max-width: 920px){
-  .grid{ grid-template-columns: 1fr; }
   .hero-grid{ grid-template-columns: 1fr; }
   .two-col{ grid-template-columns: 1fr; }
   .contact{ flex-direction:column; align-items:flex-start; }
