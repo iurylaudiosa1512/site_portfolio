@@ -15,8 +15,8 @@
       </div>
 
       <nav class="nav">
+        <a href="#sobre-topo">Sobre</a>
         <a href="#projeto-1">Projeto 1</a>
-        <a href="#sobre">Sobre</a>
         <a href="#stack">Stack</a>
         <a href="#contato">Contato</a>
       </nav>
@@ -24,55 +24,36 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <h2>Portfólio de Projetos em Power BI</h2>
+    <!-- HERO / APRESENTAÇÃO (COM "SOBRE" NO TOPO) -->
+    <section id="sobre-topo" class="hero">
+      <div class="container hero-one">
+        <h2>Portfólio de Projetos em Power BI</h2>
 
-          <p>
-            Meu objetivo é conquistar uma oportunidade como <strong>Analista de Dados Júnior</strong>,
-            aplicando <strong>Power BI</strong> (DAX, Power Query e modelagem) e <strong>SQL</strong> para transformar dados
-            em análises claras, dashboards objetivos e decisões melhores para o negócio.
-          </p>
+        <p>
+          Sou <strong>Iury Laudiosa Clementino</strong> e desenvolvo projetos com foco em
+          <strong>Power BI</strong> (DAX, Power Query e modelagem) e <strong>SQL</strong>,
+          buscando transformar dados em análises claras e acionáveis.
+        </p>
 
-          <div class="cta">
-            <a class="btn" href="#projeto-1">Ver Projeto 1</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/iury-laudiosa-846ab4250/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn btn-secondary" href="https://github.com/iurylaudiosa1512" target="_blank" rel="noopener">GitHub</a>
-          </div>
+        <p class="muted">
+          Gosto de estruturar bem a base (modelo e medidas), garantir consistência dos indicadores
+          e construir dashboards que respondam perguntas reais do negócio.
+        </p>
 
-          <div class="badges">
-            <span class="chip">DAX</span>
-            <span class="chip">Power Query</span>
-            <span class="chip">Modelagem</span>
-            <span class="chip">SQL</span>
-            <span class="chip">Storytelling</span>
-          </div>
+        <p class="muted">
+          Meu objetivo é conquistar uma oportunidade como <strong>Analista de Dados Júnior</strong>,
+          entregando dashboards objetivos e análises que apoiem decisões melhores para o negócio.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#projeto-1">Ver Projeto 1</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/iury-laudiosa-846ab4250/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-secondary" href="https://github.com/iurylaudiosa1512" target="_blank" rel="noopener">GitHub</a>
         </div>
 
-        <div class="hero-card">
-          <h3>Destaque</h3>
-          <p class="muted">Projeto recomendado para abrir primeiro</p>
-
-          <div class="highlight">
-            <h4>Projeto 1 — Relatório Power BI</h4>
-            <ul>
-              <li>KPIs: desempenho, tendências e principais pontos de atenção</li>
-              <li>Estrutura: base bem modelada + medidas padronizadas</li>
-              <li>Foco: clareza para tomada de decisão</li>
-            </ul>
-
-            <div class="links">
-              <a href="#projeto-1">Ver na página</a>
-              <a href="https://app.powerbi.com/view?r=eyJrIjoiOGNlNTFkNTYtNGJkNi00OTBjLTk2MjAtMDg1NTc2Y2ZiNjBlIiwidCI6IjE0Y2JkNWE3LWVjOTQtNDZiYS1iMzE0LWNjMGZjOTcyYTE2MSIsImMiOjh9"
-                 target="_blank" rel="noopener">Abrir no Power BI</a>
-            </div>
-          </div>
-
-          <p class="small muted">
-            *Dica: publique somente dados fictícios (ou anonimizados) se o relatório ficar público.
-          </p>
-        </div>
+        <p class="small muted" style="margin-top:10px;">
+          *Dica: publique somente dados fictícios (ou anonimizados) se o relatório ficar público.
+        </p>
       </div>
     </section>
 
@@ -94,13 +75,6 @@
               <li><strong>Destaques:</strong> KPIs, filtros, análises por período e visão geral dos principais pontos.</li>
               <li><strong>Construção:</strong> modelagem bem definida + medidas DAX + tratamento no Power Query.</li>
             </ul>
-
-            <div class="meta" style="margin-top:12px;">
-              <span class="tag">Power BI</span>
-              <span class="tag">DAX</span>
-              <span class="tag">Power Query</span>
-              <span class="tag">Modelagem</span>
-            </div>
 
             <div class="links" style="margin-top:14px;">
               <a
@@ -126,50 +100,26 @@
       </div>
     </section>
 
-    <section id="sobre" class="section alt">
-      <div class="container two-col">
-        <div>
-          <h2>Sobre</h2>
-          <p>
-            Sou <strong>Iury Laudiosa Clementino</strong> e desenvolvo projetos com foco em
-            <strong>Power BI</strong> (DAX, Power Query e modelagem) e <strong>SQL</strong>,
-            buscando transformar dados em análises claras e acionáveis.
-          </p>
-          <p class="muted">
-            Gosto de estruturar bem a base (modelo e medidas), garantir consistência dos indicadores
-            e construir dashboards que respondam perguntas reais do negócio.
-          </p>
-        </div>
-
-        <div class="box">
-          <h3>O que você vai encontrar aqui</h3>
-          <ul>
-            <li>Projetos destrinchados com embed do Power BI</li>
-            <li>Explicação do problema, abordagem e principais insights</li>
-            <li>Foco em clareza, consistência e valor para o negócio</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="stack" class="section">
+    <!-- STACK (sem tags, só texto simples) -->
+    <section id="stack" class="section alt">
       <div class="container">
         <div class="section-head">
           <h2>Stack</h2>
           <p class="muted">Ferramentas e tópicos que uso nos projetos.</p>
         </div>
-        <div class="stack">
-          <div class="pill">Power BI</div>
-          <div class="pill">DAX</div>
-          <div class="pill">Power Query (M)</div>
-          <div class="pill">Modelagem Dimensional</div>
-          <div class="pill">SQL</div>
-          <div class="pill">ETL/ELT</div>
+
+        <div class="box">
+          <ul>
+            <li>Power BI (DAX, Power Query)</li>
+            <li>Modelagem Dimensional</li>
+            <li>SQL</li>
+            <li>Boas práticas de visualização e storytelling</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="contato" class="section alt">
+    <section id="contato" class="section">
       <div class="container contact">
         <div>
           <h2>Contato</h2>

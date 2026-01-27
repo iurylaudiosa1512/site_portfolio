@@ -52,30 +52,13 @@ img{ width:100%; height:100%; object-fit:cover; display:block; }
   background: rgba(255,255,255,.03);
 }
 
-.hero{ padding:36px 0 10px; }
-.hero-grid{
-  display:grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap:22px;
-  align-items:stretch;
+/* HERO (1 coluna, sem destaque e sem tags) */
+.hero{ padding:36px 0 22px; }
+.hero-one{
+  max-width: 900px;
 }
-.hero h2{ font-size:34px; margin:0 0 10px; }
-.hero p{ color:var(--muted); line-height:1.6; margin:0 0 16px; }
-
-.hero-card{
-  background: linear-gradient(180deg, rgba(93,214,255,.08), rgba(255,255,255,.02));
-  border: 1px solid var(--line);
-  border-radius:18px;
-  padding:16px;
-}
-.highlight{
-  background: rgba(255,255,255,.03);
-  border:1px solid var(--line);
-  border-radius:16px;
-  padding:12px;
-}
-.highlight h4{ margin:0 0 8px; }
-.highlight ul{ margin:0; padding-left:18px; color:var(--muted); line-height:1.6; }
+.hero-one h2{ font-size:34px; margin:0 0 10px; }
+.hero-one p{ color:var(--muted); line-height:1.65; margin:0 0 14px; }
 
 .section{ padding:34px 0; }
 .section.alt{
@@ -89,7 +72,7 @@ img{ width:100%; height:100%; object-fit:cover; display:block; }
 .muted{ color:var(--muted); }
 .small{ font-size:12px; }
 
-.cta{ display:flex; gap:10px; flex-wrap:wrap; margin: 12px 0 14px; }
+.cta{ display:flex; gap:10px; flex-wrap:wrap; margin: 12px 0 10px; }
 .btn{
   display:inline-flex; align-items:center; justify-content:center;
   padding:10px 14px;
@@ -105,25 +88,6 @@ img{ width:100%; height:100%; object-fit:cover; display:block; }
   background: rgba(255,255,255,.06);
 }
 
-.badges{ display:flex; gap:8px; flex-wrap:wrap; }
-.chip{
-  font-size:12px;
-  color: var(--muted);
-  border:1px solid var(--line);
-  padding:6px 10px;
-  border-radius:999px;
-  background: rgba(255,255,255,.02);
-}
-
-.meta{ display:flex; gap:8px; flex-wrap:wrap; margin:10px 0 10px; }
-.tag{
-  font-size:12px; color:var(--muted);
-  border:1px solid var(--line);
-  padding:6px 10px;
-  border-radius:999px;
-  background: rgba(255,255,255,.02);
-}
-
 .links{ display:flex; gap:12px; flex-wrap:wrap; margin-top:12px; }
 .links a{
   font-size:13px;
@@ -133,13 +97,6 @@ img{ width:100%; height:100%; object-fit:cover; display:block; }
 }
 .links a:hover{ border-bottom-style: solid; }
 
-.two-col{
-  display:grid;
-  grid-template-columns: 1.1fr .9fr;
-  gap:14px;
-  align-items:start;
-}
-
 .box{
   background: var(--card);
   border:1px solid var(--line);
@@ -147,32 +104,7 @@ img{ width:100%; height:100%; object-fit:cover; display:block; }
   padding:14px;
 }
 .box h3{ margin:0 0 10px; }
-.box ul{ margin:0; padding-left:18px; color:var(--muted); line-height:1.6; }
-
-.stack{ display:flex; flex-wrap:wrap; gap:10px; }
-.pill{
-  padding:10px 12px;
-  border-radius:14px;
-  border:1px solid var(--line);
-  background: rgba(255,255,255,.02);
-  color: var(--muted);
-  font-size:13px;
-}
-
-.contact{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
-}
-.contact-links{ display:flex; gap:10px; flex-wrap:wrap; }
-
-.footer{
-  padding:18px 0;
-  border-top:1px solid var(--line);
-  color:var(--muted);
-  font-size:13px;
-}
+.box ul{ margin:0; padding-left:18px; color:var(--muted); line-height:1.7; }
 
 /* ===== Projeto 1 (Embed Power BI) ===== */
 .project-wrap{
@@ -196,10 +128,22 @@ img{ width:100%; height:100%; object-fit:cover; display:block; }
   border: 0;
 }
 
+.contact{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+}
+.contact-links{ display:flex; gap:10px; flex-wrap:wrap; }
+
+.footer{
+  padding:18px 0;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:13px;
+}
+
 @media (max-width: 920px){
-  .hero-grid{ grid-template-columns: 1fr; }
-  .two-col{ grid-template-columns: 1fr; }
-  .contact{ flex-direction:column; align-items:flex-start; }
   .nav{ display:none; }
 
   .project-wrap{
@@ -207,5 +151,10 @@ img{ width:100%; height:100%; object-fit:cover; display:block; }
   }
   .embed iframe{
     height: 560px;
+  }
+
+  .contact{
+    flex-direction:column;
+    align-items:flex-start;
   }
 }
