@@ -4,146 +4,362 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfólio | Power BI | Iury Laudiosa</title>
-  <link rel="stylesheet" href="style.css"/>
+  
+  <!-- Fonte: Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Ícones (FontAwesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="top">
+
+  <!-- Header -->
+  <header>
     <div class="container">
       <div class="brand">
-        <h1>Iury Laudiosa Clementino</h1>
-        <p>Analista de Dados Júnior • Power BI • SQL</p>
+        <div class="brand-logo">IL</div>
+        <span style="font-weight: 700; font-size: 1.1rem;">Iury Laudiosa</span>
       </div>
 
-      <nav class="nav">
-        <a href="#sobre-topo">Sobre</a>
-        <a href="#projeto-1">Projeto 1</a>
-        <a href="#stack">Stack</a>
+      <nav class="nav-desktop">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#certificacoes">Cursos</a>
         <a href="#contato">Contato</a>
       </nav>
+
+      <div style="width: 40px;"></div>
     </div>
   </header>
 
-  <main>
-    <!-- HERO / APRESENTAÇÃO (COM "SOBRE" NO TOPO) -->
-    <section id="sobre-topo" class="hero">
-      <div class="container hero-one">
-        <h2>Portfólio de Projetos em Power BI</h2>
+  <!-- Hero Section -->
+  <section id="home" class="hero container">
+    <div class="hero-content">
+      <div class="badge">
+        <i class="fa-solid fa-chart-simple"></i> Data Analyst & Power BI
+      </div>
+      
+      <h1>Olá, sou o <br><span class="text-highlight">Iury Laudiosa</span></h1>
+      
+      <p>
+        Transformo dados brutos em insights estratégicos. Especialista em 
+        <strong>Power BI (DAX, ETL)</strong> e <strong>SQL</strong>, com foco em 
+        construir dashboards que respondam perguntas reais do negócio.
+      </p>
 
-        <p>
-          Sou <strong>Iury Laudiosa Clementino</strong> e desenvolvo projetos com foco em
-          <strong>Power BI</strong> (DAX, Power Query e modelagem) e <strong>SQL</strong>,
-          buscando transformar dados em análises claras e acionáveis.
-        </p>
+      <div class="hero-buttons">
+        <a href="#projetos" class="btn btn-primary">
+          Ver Projetos <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contato" class="btn btn-outline">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </div>
+    </div>
 
-        <p class="muted">
+    <div class="hero-image">
+      <div class="img-frame">
+        <!-- Placeholder para foto -->
+        <div style="display:flex; height:100%; align-items:center; justify-content:center; color:#94a3b8;">
+          <i class="fa-solid fa-user" style="font-size: 4rem;"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre & Stack -->
+  <section id="sobre" class="container">
+    <div class="section-title">
+      <h2>Sobre Mim</h2>
+      <div class="bar"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-muted);">
+          Com foco em análise de dados, direcionei meus estudos para transformar números em decisões.
           Gosto de estruturar bem a base (modelo e medidas), garantir consistência dos indicadores
-          e construir dashboards que respondam perguntas reais do negócio.
+          e construir dashboards objetivos.
         </p>
-
-        <p class="muted">
-          Meu objetivo é conquistar uma oportunidade como <strong>Analista de Dados Júnior</strong>,
-          entregando dashboards objetivos e análises que apoiem decisões melhores para o negócio.
-        </p>
-
-        <div class="cta">
-          <a class="btn" href="#projeto-1">Ver Projeto 1</a>
-          <a class="btn btn-secondary" href="https://www.linkedin.com/in/iury-laudiosa-846ab4250/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn btn-secondary" href="https://github.com/iurylaudiosa1512" target="_blank" rel="noopener">GitHub</a>
-        </div>
-
-        <p class="small muted" style="margin-top:10px;">
-          *Dica: publique somente dados fictícios (ou anonimizados) se o relatório ficar público.
+        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-muted);">
+          Atualmente atuo como <strong>Estagiário em Análise de Dados</strong> na MRS Logística,
+          aplicando conhecimentos de infraestrutura e BI para resolver problemas de negócio.
         </p>
       </div>
-    </section>
 
-    <!-- SEÇÃO PROJETO 1 (EMBED) -->
-    <section id="projeto-1" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Projeto 1 — Relatório Power BI</h2>
-          <p class="muted">
-            Relatório interativo incorporado diretamente na página (sem redirecionamento).
-          </p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3><i class="fa-solid fa-chart-pie"></i></h3>
+          <span>Power BI & DAX</span>
         </div>
-
-        <div class="project-wrap">
-          <div class="project-info box">
-            <h3>Resumo do Projeto</h3>
-            <ul>
-              <li><strong>Objetivo:</strong> apresentar indicadores e análises para apoiar decisões com clareza e rapidez.</li>
-              <li><strong>Destaques:</strong> KPIs, filtros, análises por período e visão geral dos principais pontos.</li>
-              <li><strong>Construção:</strong> modelagem bem definida + medidas DAX + tratamento no Power Query.</li>
-            </ul>
-
-            <div class="links" style="margin-top:14px;">
-              <a
-                href="https://app.powerbi.com/view?r=eyJrIjoiOGNlNTFkNTYtNGJkNi00OTBjLTk2MjAtMDg1NTc2Y2ZiNjBlIiwidCI6IjE0Y2JkNWE3LWVjOTQtNDZiYS1iMzE0LWNjMGZjOTcyYTE2MSIsImMiOjh9"
-                target="_blank" rel="noopener"
-              >Abrir em tela cheia</a>
-            </div>
-
-            <p class="small muted" style="margin-top:10px;">
-              *Em alguns ambientes corporativos, o embed pode ser bloqueado por política de cookies/autenticação.
-            </p>
-          </div>
-
-          <div class="embed">
-            <iframe
-              title="Projeto 1 - Power BI"
-              src="https://app.powerbi.com/view?r=eyJrIjoiOGNlNTFkNTYtNGJkNi00OTBjLTk2MjAtMDg1NTc2Y2ZiNjBlIiwidCI6IjE0Y2JkNWE3LWVjOTQtNDZiYS1iMzE0LWNjMGZjOTcyYTE2MSIsImMiOjh9"
-              frameborder="0"
-              allowfullscreen="true">
-            </iframe>
-          </div>
+        <div class="skill-card">
+          <h3><i class="fa-solid fa-database"></i></h3>
+          <span>SQL & Modelagem</span>
+        </div>
+        <div class="skill-card">
+          <h3><i class="fa-solid fa-bolt"></i></h3>
+          <span>Power Query ETL</span>
+        </div>
+        <div class="skill-card">
+          <h3><i class="fa-solid fa-brain"></i></h3>
+          <span>Engenharia de Dados</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- STACK (sem tags, só texto simples) -->
-    <section id="stack" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Stack</h2>
-          <p class="muted">Ferramentas e tópicos que uso nos projetos.</p>
-        </div>
+  <!-- Projetos Section -->
+  <section id="projetos" class="container">
+    <div class="section-title">
+      <h2>Projetos em Destaque</h2>
+      <div class="bar"></div>
+    </div>
 
-        <div class="box">
-          <ul>
-            <li>Power BI (DAX, Power Query)</li>
-            <li>Modelagem Dimensional</li>
-            <li>SQL</li>
-            <li>Boas práticas de visualização e storytelling</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="contato" class="section">
-      <div class="container contact">
+    <div class="project-card">
+      <div class="project-header">
         <div>
-          <h2>Contato</h2>
-          <p class="muted">
-            Se quiser conversar sobre projetos ou oportunidades, pode me chamar:
-          </p>
+          <h3 style="margin: 0 0 10px; font-size: 1.5rem;">Relatório de Vendas & KPIs</h3>
+          <p style="margin:0; color: var(--text-muted);">Dashboard interativo focado em performance comercial.</p>
         </div>
-        <div class="contact-links">
-          <a class="btn" href="mailto:iurylaudiosa1512@gmail.com">Email</a>
-          <a class="btn btn-secondary" href="https://www.linkedin.com/in/iury-laudiosa-846ab4250/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn btn-secondary" href="https://github.com/iurylaudiosa1512" target="_blank" rel="noopener">GitHub</a>
+        <div class="tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Figma UI</span>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer class="footer">
+      <div class="embed-container">
+        <iframe
+          title="Projeto 1 - Power BI"
+          src="https://app.powerbi.com/view?r=eyJrIjoiOGNlNTFkNTYtNGJkNi00OTBjLTk2MjAtMDg1NTc2Y2ZiNjBlIiwidCI6IjE0Y2JkNWE3LWVjOTQtNDZiYS1iMzE0LWNjMGZjOTcyYTE2MSIsImMiOjh9"
+          allowfullscreen="true">
+        </iframe>
+      </div>
+
+      <div class="project-footer">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiOGNlNTFkNTYtNGJkNi00OTBjLTk2MjAtMDg1NTc2Y2ZiNjBlIiwidCI6IjE0Y2JkNWE3LWVjOTQtNDZiYS1iMzE0LWNjMGZjOTcyYTE2MSIsImMiOjh9" target="_blank" class="btn btn-primary" style="font-size: 0.9rem;">
+          <i class="fa-solid fa-expand"></i> Tela Cheia
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trajetória Profissional -->
+  <section id="trajetoria">
     <div class="container">
-      <p>© <span id="year"></span> Iury Laudiosa Clementino • Portfólio Power BI</p>
+      <div class="section-title">
+        <h2>Trajetória Profissional</h2>
+        <div class="bar"></div>
+      </div>
+
+      <div class="timeline-container">
+        
+        <!-- Item 1: Pós Graduação (Futuro/Atual) -->
+        <div class="timeline-item left">
+          <div class="timeline-dot" style="background-color: var(--icon-purple);">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="t-header">
+              <h3>Pós-graduação Eng. de Dados</h3>
+              <span class="t-badge badge-current">Em Breve</span>
+            </div>
+            <div class="t-company"><i class="fa-solid fa-university"></i> PUC Minas</div>
+            <p class="t-desc">Especialização com foco em Big Data, arquitetura de dados e pipelines.</p>
+            <div class="t-date"><i class="fa-regular fa-calendar"></i> 2025 - 2026</div>
+          </div>
+        </div>
+
+        <!-- Item 2: Experiência Profissional (Atual) -->
+        <div class="timeline-item right">
+          <div class="timeline-dot" style="background-color: var(--icon-blue);">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="t-header">
+              <h3>Estagiário em Análise de Dados</h3>
+              <span class="t-badge badge-current">Atual</span>
+            </div>
+            <div class="t-company"><i class="fa-solid fa-train"></i> MRS Logística</div>
+            <p class="t-desc">Atuação focada em análise de dados, suporte à tomada de decisão e desenvolvimento de soluções de BI.</p>
+            <div class="t-date"><i class="fa-regular fa-calendar"></i> 2024 - Atual</div>
+          </div>
+        </div>
+
+        <!-- Item 3: Graduação -->
+        <div class="timeline-item left">
+          <div class="timeline-dot" style="background-color: var(--icon-green);">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="t-header">
+              <h3>Análise e Desenv. de Sistemas</h3>
+              <span class="t-badge badge-past">Concluindo</span>
+            </div>
+            <div class="t-company"><i class="fa-solid fa-school"></i> Instituto Vianna Jr</div>
+            <p class="t-desc">Formação sólida em lógica, banco de dados e engenharia de software.</p>
+            <div class="t-date"><i class="fa-regular fa-calendar"></i> 2022 - 2025</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICAÇÕES & CURSOS -->
+  <section id="certificacoes" class="container">
+    <div class="section-title">
+      <h2>Certificações & Cursos</h2>
+      <div class="bar"></div>
+    </div>
+
+    <div class="accordion-wrap">
+      
+      <!-- Item 1: Análise de Dados & BI -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <div class="acc-title-group">
+            <div class="acc-icon acc-blue">
+              <i class="fa-solid fa-chart-column"></i>
+            </div>
+            <h3>Análise de Dados & BI</h3>
+          </div>
+          <i class="fa-solid fa-chevron-down acc-arrow"></i>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <ul>
+              <li><strong>Data Analytics</strong> – Google</li>
+              <li><strong>Data Analytics (Básico e Intermediário)</strong> – Ada Tech</li>
+              <li><strong>Power BI Desktop</strong> – S.O.S. Informatica S.r.l.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2: Engenharia de Dados & IA -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <div class="acc-title-group">
+            <div class="acc-icon acc-green">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3>Engenharia de Dados & IA</h3>
+          </div>
+          <i class="fa-solid fa-chevron-down acc-arrow"></i>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <ul>
+              <li><strong>Fundamental Accreditation</strong> – Databricks</li>
+              <li><strong>Generative AI Fundamentals</strong> – Databricks Academy</li>
+              <li><strong>Administrador de Banco de Dados</strong> – IFRS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3: Formação Acadêmica (Laranja) -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <div class="acc-title-group">
+            <div class="acc-icon acc-orange">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3>Formação Acadêmica</h3>
+          </div>
+          <i class="fa-solid fa-chevron-down acc-arrow"></i>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <ul>
+              <li><strong>Pós-graduação em Engenharia de Dados</strong><br>
+                  PUC Minas (2025 - 2026)</li>
+              <li><strong>Análise e Desenvolvimento de Sistemas</strong><br>
+                  Instituto Vianna Jr (2022 - 2025)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contact-section-blue">
+    <div class="container">
+      <div class="contact-wrapper">
+        <h2>Vamos trabalhar juntos?</h2>
+        <p>Estou pronto para aplicar minhas habilidades de análise de dados para gerar valor para sua empresa.</p>
+        
+        <div class="contact-buttons-row">
+          <a href="mailto:iurylaudiosa1512@gmail.com" class="btn-action btn-email">
+            <i class="fa-regular fa-envelope"></i> Enviar E-mail
+          </a>
+          <a href="https://wa.me/" target="_blank" class="btn-action btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="https://linkedin.com/in/iury-laudiosa-846ab4250/" target="_blank" class="btn-action btn-linkedin">
+            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+          </a>
+        </div>
+
+        <div class="contact-info-bar">
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="info-text">
+              <h4>E-mail</h4>
+              <span>iurylaudiosa1512@gmail.com</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="info-text">
+              <h4>Telefone</h4>
+              <span>(21) 9XXXX-XXXX</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="info-text">
+              <h4>Localização</h4>
+              <span>Rio de Janeiro, RJ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Iury Laudiosa Clementino. Todos os direitos reservados.</p>
     </div>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Script para o efeito Acordeão
+    function toggleAccordion(element) {
+      const item = element.parentElement;
+      const content = item.querySelector('.accordion-content');
+      
+      item.classList.toggle('active');
+      
+      if (item.classList.contains('active')) {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } else {
+        content.style.maxHeight = null;
+      }
+    }
   </script>
 </body>
 </html>
