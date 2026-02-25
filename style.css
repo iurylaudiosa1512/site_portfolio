@@ -237,7 +237,6 @@ section { padding: 80px 0; }
   font-size: 1.1rem;
 }
 
-/* Cores dos ícones baseadas na imagem */
 .acc-blue { background: var(--icon-blue); }
 .acc-green { background: var(--icon-green); }
 .acc-purple { background: var(--icon-purple); }
@@ -255,7 +254,6 @@ section { padding: 80px 0; }
   transition: transform 0.3s ease;
 }
 
-/* Classe ativada via JS */
 .accordion-item.active {
   border-color: var(--primary);
 }
@@ -288,19 +286,51 @@ section { padding: 80px 0; }
 
 /* --- Project Embed Section --- */
 .project-card {
-  background: var(--bg-card); border-radius: 24px; border: 1px solid var(--border); padding: 30px; margin-top: 40px;
+  background: var(--bg-card);
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  padding: 30px;
+  margin-top: 40px;
 }
+
 .project-header {
-  display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap; gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+
 .tags { display: flex; gap: 10px; }
 .tag {
-  background: rgba(14, 165, 233, 0.1); color: var(--primary); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500;
+  background: rgba(14, 165, 233, 0.1);
+  color: var(--primary);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
-.embed-container {
-  position: relative; width: 100%; height: 0; padding-bottom: 56.25%; background: #000; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+/* ✅ FIX DEFINITIVO: impede o iframe de “estourar” a altura */
+.embed-container{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
-.embed-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+.embed-container iframe{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 .project-footer { margin-top: 20px; display: flex; justify-content: flex-end; }
 
 /* --- Contato --- */
