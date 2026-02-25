@@ -71,11 +71,17 @@ header .container {
 }
 
 .brand-logo {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  width: 40px; height: 40px;
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  font-weight: 700; color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(14, 165, 233, 0.18);
+}
+
+.brand-name{
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .nav-desktop {
