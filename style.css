@@ -387,3 +387,24 @@ footer { text-align: center; padding: 40px 0; border-top: 1px solid var(--border
   .timeline-item.right { left: 0%; }
   .timeline-dot, .timeline-item.right .timeline-dot { left: 9px; right: auto; }
 }
+
+.project-preview{
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.project-preview img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer com 2 botões */
+.project-footer-split{
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
