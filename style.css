@@ -74,12 +74,12 @@ header .container {
 .brand-name{
   font-weight: 700;
   font-size: 1.1rem;
-  line-height: 1;   /* ✅ evita “pular” a altura */
+  line-height: 1;   
 }
 
 .brand-logo-img{
-  width: 24px;      /* ✅ mais previsível que % */
-  height: 24px;
+  width: 28px;  
+  height: 28px;
   object-fit: contain;
   display: block;
 }
@@ -89,19 +89,19 @@ header .container {
   height: 40px;
   border-radius: 10px;
 
-  /* ✅ fundo preto */
-  background: #0b1220; /* ou #000 se quiser preto total */
+
+  background: #000;
 
   display: grid;
   place-items: center;
   overflow: hidden;
 
-  /* borda sutil pra separar do header escuro */
+
   border: 1px solid rgba(255,255,255,0.08);
 
-  /* mantém o “glow” tecnológico */
-  box-shadow: 0 6px 18px rgba(14, 165, 233, 0.18);
+  box-shadow: none;
 }
+
 
 .nav-desktop {
   display: flex;
