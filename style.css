@@ -91,7 +91,7 @@ header .container {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   display: grid;
   place-items: center;
-  box-shadow: 0 6px 18px rgba(14, 165, 233, 0.18);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
   overflow: hidden; /* ✅ garante que não vaza */
 }
 
